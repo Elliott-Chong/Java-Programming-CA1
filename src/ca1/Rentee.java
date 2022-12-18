@@ -14,7 +14,7 @@ public class Rentee {
 
 	private String member_id;
 	private String name;
-	private Comic[] comics_loaned;
+	private Comic[] comics_loaned = {};
 
 	public static String generateRandomId(int len) {
 		String chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -48,7 +48,7 @@ public class Rentee {
 	}
 
 	public Comic[] getComics_loaned() {
-		return comics_loaned;
+		return this.comics_loaned;
 	}
 
 	public void setComics_loaned(Comic[] comics_loaned) {
